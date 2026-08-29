@@ -5,181 +5,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - LazyBuster</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e9ecef;
+            --code-bg: #f1f3f5;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333333;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px 25px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #ffffff;
+            background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
         }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
         h1 {
-            color: #111111;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
+            color: var(--primary-color);
             margin-top: 0;
+            font-size: 2.2rem;
         }
+
+        .meta-info {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.8;
+        }
+
+        .meta-info strong {
+            color: var(--primary-color);
+        }
+
         h2 {
-            color: #222222;
-            margin-top: 30px;
-            border-bottom: 1px solid #f0f0f0;
-            padding-bottom: 5px;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
         }
-        p, li {
-            font-size: 15px;
-        }
+
         ul {
             padding-left: 20px;
+            margin-bottom: 20px;
         }
+
         li {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .permission-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .permission-block h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .path-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 0.9rem;
+        }
+
+        .path-list li {
+            background: var(--code-bg);
+            padding: 6px 12px;
+            border-radius: 4px;
             margin-bottom: 6px;
+            display: inline-block;
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
         }
-        .meta-info {
-            background-color: #f4f6f8;
-            padding: 15px 20px;
-            border-radius: 6px;
-            margin-bottom: 25px;
-            font-size: 14px;
-        }
-        .meta-info p {
-            margin: 4px 0;
-        }
+
         a {
-            color: #0066cc;
+            color: var(--accent-color);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #777777;
-            text-align: center;
+
+        .footer-contact {
+            background-color: var(--code-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+<div class="container">
+    <header>
         <h1>Privacy Policy for LazyBuster</h1>
-
         <div class="meta-info">
-            <p><strong>Effective date:</strong> August 28, 2026</p>
-            <p><strong>Last updated:</strong> August 28, 2026</p>
-            <p><strong>App:</strong> LazyBuster</p>
-            <p><strong>Developer:</strong> © 2026 BRAI Lab</p>
-            <p><strong>Contact:</strong> <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a></p>
+            <strong>Effective date:</strong> August 28, 2026<br>
+            <strong>Last updated:</strong> August 28, 2026<br>
+            <strong>App:</strong> LazyBuster<br>
+            <strong>Developer:</strong> © 2026 BRAI Lab<br>
+            <strong>Contact:</strong> <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a>
         </div>
+    </header>
 
-        <p>This Privacy Policy explains how LazyBuster handles information when you use the iOS app. We designed LazyBuster so that motion detection, custom sounds, and your challenge history stay on your device.</p>
+    <p>This Privacy Policy explains how LazyBuster handles information when you use the mobile application on iOS and Android devices. We designed LazyBuster so that motion detection, custom sounds, and your challenge history stay locally on your device.</p>
 
-        <h2>1. Summary</h2>
-        <ul>
-            <li>We do not require an account or sign-in.</li>
-            <li>We do not sell personal information.</li>
-            <li>We do not show ads, and we do not use tracking or advertising identifiers.</li>
-            <li>We do not use analytics or crash-reporting SDKs that send data to us.</li>
-            <li>Camera frames used for motion detection are processed on your device and are not uploaded.</li>
-            <li>Microphone access is used only if you record a custom alarm sound. Recordings stay on your device.</li>
-            <li>Challenge results, settings, and streaks are stored locally on your device.</li>
-            <li>If you contact us by email, we will receive whatever you include in that message.</li>
+    <h2>1. Summary</h2>
+    <ul>
+        <li>We do not require an account or sign-in.</li>
+        <li>We do not sell personal information.</li>
+        <li>We do not show ads, and we do not use tracking or advertising identifiers.</li>
+        <li>We do not use analytics or crash-reporting SDKs that send data to our servers.</li>
+        <li>Camera frames used for motion detection are processed entirely on your device and are never uploaded.</li>
+        <li>Microphone access is used only if you record a custom alarm sound. Recordings stay strictly on your device.</li>
+        <li>Challenge results, settings, and streaks are stored locally on your device.</li>
+        <li>If you contact us by email, we will receive whatever information you include in that message.</li>
+    </ul>
+
+    <h2>2. Information We Do Not Collect</h2>
+    <p>LazyBuster does not collect or transmit:</p>
+    <ul>
+        <li>Name, email address, phone number, or other contact details from inside the app.</li>
+        <li>Precise or coarse location data.</li>
+        <li>Contacts, photos library, or calendar data.</li>
+        <li>Health, fitness, or financial information.</li>
+        <li>Advertising identifiers (such as Apple’s IDFA or Google Advertising ID / GAID) or tracking data.</li>
+        <li>Analytics events, usage logs, or crash reports sent to our servers.</li>
+        <li>Video or photo uploads of you or anyone in front of the camera.</li>
+    </ul>
+    <p>The app does not include in-app purchases, subscriptions, or third-party ads.</p>
+
+    <h2>3. Information Processed or Stored on Your Device</h2>
+    <p>The following data stays on your smartphone or tablet unless you delete the app or clear its data:</p>
+
+    <div class="permission-block">
+        <h3>Camera (Motion Detection)</h3>
+        <p>During a Battle Zone challenge, LazyBuster uses the camera to determine whether you are moving or sitting still. The app processes frames locally on your device, compares them, and discards them immediately after comparison. We do not save these frames to your photo library, nor do we upload them.</p>
+        <p><strong>Managing Permissions:</strong> You can grant, deny, or revoke camera access at any time via system settings:</p>
+        <ul class="path-list">
+            <li><strong>iOS:</strong> Settings → LazyBuster → Camera</li><br>
+            <li><strong>Android:</strong> Settings → Apps → LazyBuster → Permissions → Camera</li>
         </ul>
-
-        <h2>2. Information we do not collect</h2>
-        <p>LazyBuster does not collect or transmit:</p>
-        <ul>
-            <li>Name, email address, phone number, or other contact details from inside the app</li>
-            <li>Precise or coarse location</li>
-            <li>Contacts, photos library, or calendar</li>
-            <li>Health, fitness, or financial information</li>
-            <li>Advertising identifiers (IDFA) or tracking data</li>
-            <li>Analytics events, usage logs, or crash reports sent to our servers</li>
-            <li>Video or photo uploads of you or anyone in front of the camera</li>
-        </ul>
-        <p>The app does not include in-app purchases, subscriptions, or third-party ads.</p>
-
-        <h2>3. Information processed or stored on your device</h2>
-        <p>The following stays on your iPhone or iPad unless you delete the app or its data.</p>
-
-        <h3>Camera (motion detection)</h3>
-        <p>During a Battle Zone challenge, LazyBuster uses the camera to tell whether you are moving or sitting still. The app takes small snapshots on your device, compares them locally, and discards them after the comparison. We do not save these snapshots to your photo library, and we do not upload them.</p>
-        <p>Camera access is requested so the challenge can run. You can deny or later revoke it in <strong>iOS Settings → LazyBuster → Camera</strong>. Without camera access, motion challenges cannot run.</p>
-
-        <h3>Microphone (optional custom sounds)</h3>
-        <p>The microphone is used only if you choose to record a custom alarm or fail sound in Settings. Built-in sounds work without the microphone.</p>
-        <p>Recordings are stored locally on your device for playback in the app. We do not upload them.</p>
-        <p>You can deny or later revoke microphone access in <strong>iOS Settings → LazyBuster → Microphone</strong>.</p>
-
-        <h3>Imported audio files (optional)</h3>
-        <p>If you import an audio file for a custom sound, that file is used locally in the app. We do not upload it.</p>
-
-        <h3>Challenge history and settings</h3>
-        <p>The app stores on your device:</p>
-        <ul>
-            <li>Daily check-in results (success or fail, date, challenge mode, duration, alarm count)</li>
-            <li>Streaks and totals shown in Hall of Fame</li>
-            <li>App settings (selected mode, sound and haptics preferences, custom sound references)</li>
-        </ul>
-        <p>This data is stored with the app (local device storage). It is not synced to iCloud by us, not backed up to our servers, and not linked to an account. Deleting the app, or clearing the app’s data, permanently removes this information.</p>
-
-        <h2>4. How we use information</h2>
-        <ul>
-            <li>On-device camera processing is used only to detect motion during a challenge.</li>
-            <li>On-device audio is used only to play alarms and custom sounds you chose.</li>
-            <li>Local history is used only to show your check-ins, streaks, and Hall of Fame.</li>
-        </ul>
-        <p>We do not use this information for advertising, profiling, or selling data.</p>
-
-        <h2>5. Sharing</h2>
-        <p>We do not share, sell, rent, or disclose your information to third parties, because the app does not send your personal data to us or to other companies.</p>
-        <p><strong>Email support:</strong> If you email us, we use your message only to reply and to fix the issue you reported. We do not use support email for marketing.</p>
-        <p><strong>Service providers we do not use in this app:</strong> LazyBuster does not include third-party analytics, advertising, social, or crash-reporting SDKs.</p>
-        <p><strong>Operating system and App Store:</strong> Apple may process information according to Apple’s own policies when you download the app from the App Store or use iOS features (for example, system permission prompts). That processing is controlled by Apple, not by LazyBuster.</p>
-
-        <h2>6. Children’s privacy</h2>
-        <p>LazyBuster is a family-friendly motion challenge app. We do not knowingly collect personal information from children.</p>
-        <p>Camera and microphone data are processed or stored only on the device, as described above, and are not sent to us. Parents and guardians should supervise use of the camera and any custom voice recordings.</p>
-        <p>If you believe a child has sent us personal information by email, contact <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a> and we will delete that message.</p>
-
-        <h2>7. Data retention and deletion</h2>
-        <ul>
-            <li>Camera snapshots used for motion detection are not kept after they are compared on the device.</li>
-            <li>Custom sounds, settings, and challenge history remain on the device until you delete them by removing the app or clearing the app’s data.</li>
-            <li>Support emails are kept only as long as needed to handle your request.</li>
-        </ul>
-        <p>Because we do not operate user accounts or a cloud database of your app data, we cannot remotely retrieve or restore your local history.</p>
-
-        <h2>8. Your choices</h2>
-        <ul>
-            <li><strong>Camera / Microphone:</strong> iOS Settings → LazyBuster.</li>
-            <li><strong>Sound and haptics:</strong> in-app Settings.</li>
-            <li><strong>Local history:</strong> delete the app (or offload/clear app data) to remove stored records and custom sounds.</li>
-        </ul>
-        <p>On iOS you can also review tracking settings in <strong>Settings → Privacy & Security</strong>. LazyBuster does not request App Tracking Transparency permission because it does not track you across apps or websites.</p>
-
-        <h2>9. International users</h2>
-        <p>LazyBuster does not transfer your in-app data to our servers. If you email us, that message is received by us at the address you write to.</p>
-
-        <h2>10. Changes to this policy</h2>
-        <p>We may update this Privacy Policy if the app’s behavior changes (for example, if we add cloud features). The “Last updated” date at the top will change, and the new policy will be posted at this URL. If we start collecting personal data, we will update this policy and, where required, ask for consent.</p>
-
-        <h2>11. Contact</h2>
-        <p>Questions about this Privacy Policy or LazyBuster’s privacy practices:</p>
-        <p>
-            <strong>Email:</strong> <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a><br>
-            <strong>App:</strong> LazyBuster
-        </p>
+        <p><small><em>*Without camera access, motion challenges cannot run.</em></small></p>
     </div>
 
-    <footer>
-        &copy; 2026 BRAI Lab. All rights reserved.
-    </footer>
+    <div class="permission-block">
+        <h3>Microphone (Optional Custom Sounds)</h3>
+        <p>The microphone is used only if you choose to record a custom alarm or fail sound in Settings. Built-in sounds work without microphone permissions. Recordings are stored locally on your device for playback within the app and are never uploaded.</p>
+        <p><strong>Managing Permissions:</strong> You can revoke microphone access via system settings:</p>
+        <ul class="path-list">
+            <li><strong>iOS:</strong> Settings → LazyBuster → Microphone</li><br>
+            <li><strong>Android:</strong> Settings → Apps → LazyBuster → Permissions → Microphone</li>
+        </ul>
+    </div>
+
+    <p><strong>Imported Audio Files (Optional)</strong><br>
+    If you import an audio file for a custom sound, that file is stored and used locally within the app. We do not upload it.</p>
+
+    <p><strong>Challenge History and Settings</strong><br>
+    The app stores the following data locally on your device:</p>
+    <ul>
+        <li>Daily check-in results (success/fail status, date, challenge mode, duration, alarm count)</li>
+        <li>Streaks and totals displayed in the Hall of Fame</li>
+        <li>App preferences (selected mode, sound and haptics settings, custom sound references)</li>
+    </ul>
+    <p>This data is stored using local device storage. It is not synced to our servers, nor is it uploaded to cloud services (such as iCloud or Google Drive) by us. Deleting the app or clearing the app’s storage/data will permanently remove this information.</p>
+
+    <h2>4. How We Use Information</h2>
+    <ul>
+        <li><strong>On-device camera processing:</strong> Used strictly to detect motion during a challenge.</li>
+        <li><strong>On-device audio:</strong> Used strictly to play alarms and custom recordings you selected.</li>
+        <li><strong>Local history and data:</strong> Used strictly to display your check-in records, streaks, and Hall of Fame statistics.</li>
+        <li>We do not use any information for advertising, profiling, or selling user data.</li>
+    </ul>
+
+    <h2>5. Sharing and Third-Party Services</h2>
+    <ul>
+        <li><strong>No Selling or Sharing:</strong> We do not share, sell, rent, or disclose your information to third parties because the app does not collect or transmit your personal data.</li>
+        <li><strong>Email Support:</strong> If you contact us for support, we use your email address and message content solely to reply and assist with your inquiry. We do not use support communications for marketing purposes.</li>
+        <li><strong>Third-Party SDKs:</strong> LazyBuster does not integrate third-party analytics, advertising, social media, or remote crash-reporting SDKs.</li>
+        <li><strong>Operating Systems & App Stores:</strong> Apple (App Store) and Google (Google Play Store) may process system-level information according to their respective privacy policies when you download the app or manage system permission prompts. That processing is controlled by Apple and Google, not by LazyBuster.</li>
+    </ul>
+
+    <h2>6. Children’s Privacy</h2>
+    <p>LazyBuster is designed as a family-friendly app. We do not knowingly collect personal information from children.</p>
+    <p>Camera and microphone inputs are processed entirely on-device and are never transmitted to us or third parties. Parents and guardians are encouraged to supervise camera and audio recording usage. If you believe a child has sent us personal information via email support, please contact us at <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a> so we can delete the communication immediately.</p>
+
+    <h2>7. Data Retention and Deletion</h2>
+    <ul>
+        <li><strong>Camera Processing Data:</strong> Frames used for motion detection are held transiently in memory and discarded immediately after processing. They are never saved or retained.</li>
+        <li><strong>Local Records & Custom Sounds:</strong> Remain on your device until you manually clear app data or uninstall the application.</li>
+        <li><strong>Support Emails:</strong> Retained only for as long as necessary to resolve your request or report.</li>
+    </ul>
+    <p><em>Note: Because we do not maintain user accounts or cloud databases, we cannot remotely retrieve, export, or restore your local history or app data.</em></p>
+
+    <h2>8. Your Choices and Controls</h2>
+    <ul>
+        <li><strong>Camera & Microphone Access:</strong> You can modify permissions anytime via your device's operating system settings (<strong>iOS Settings → LazyBuster</strong> or <strong>Android Settings → Apps → LazyBuster → Permissions</strong>).</li>
+        <li><strong>In-App Preferences:</strong> Adjust audio and haptics directly within the app's Settings menu.</li>
+        <li><strong>Data Removal:</strong> Uninstalling the app or clearing app storage through system settings will permanently delete all locally stored history, preferences, and custom audio files.</li>
+        <li><strong>Tracking & Privacy Control:</strong>
+            <ul>
+                <li>On <strong>iOS</strong>, you can manage tracking permissions under <strong>Settings → Privacy & Security → Tracking</strong>. LazyBuster does not request App Tracking Transparency (ATT) permission because it does not track users across apps or websites.</li>
+                <li>On <strong>Android</strong>, you can manage advertising privacy under <strong>Settings → Privacy → Ads</strong>. LazyBuster does not use or request the Google Advertising ID (GAID).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>9. International Users</h2>
+    <p>LazyBuster operates strictly on your local device and does not transfer in-app data to external servers anywhere in the world. Any email sent to support will be processed by us at the receiving email service provider.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically if app capabilities or features change (for instance, if cloud functionality is introduced). The "Last updated" date at the top of this policy will reflect any revisions. If future updates involve the collection of personal data, we will update this policy and request your consent where legally required.</p>
+
+    <h2>11. Contact Us</h2>
+    <div class="footer-contact">
+        <p style="margin: 0;">If you have any questions or feedback regarding this Privacy Policy or LazyBuster’s privacy practices, please contact us at:</p>
+        <ul style="margin-top: 10px; margin-bottom: 0;">
+            <li><strong>Developer:</strong> © 2026 BRAI Lab</li>
+            <li><strong>Email:</strong> <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a></li>
+            <li><strong>App:</strong> LazyBuster</li>
+        </ul>
+    </div>
+</div>
+
 </body>
 </html>
